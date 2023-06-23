@@ -16,10 +16,6 @@ def test_generate_password():
 
 
 
-
-
-
-
 def test_not_actually_a_test():
     afunction = Mock(return_value=256)
 

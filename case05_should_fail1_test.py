@@ -13,13 +13,6 @@ def test_generate_password():
     assert any(c in result for c in '0123456789')
 
 
-
-
-
-
-
-
-
 def test_not_actually_a_test():
     afunction = Mock(return_value=256)
 
