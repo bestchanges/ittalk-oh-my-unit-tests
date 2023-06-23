@@ -1,4 +1,4 @@
-# case8_contract_test.py
+# contract0_test.py
 import random
 import secrets
 import string
@@ -10,7 +10,7 @@ def generate_password():
     Secure password generator.
     Generates password length > 12, including letters and numbers
 
-    :return:
+    :return: generated password
     """
     chars = string.ascii_letters + string.digits
     password = ''.join(random.choice(chars) for _ in range(20))
@@ -22,7 +22,7 @@ def test_generate_password_canonical():
 
         result = generate_password()
 
-        assert result == 'a' * 20
+        assert result == 'aaaaaaaaaaaaaaaaaaaa'
         assert choice_mock.call_count == 20
 
 

@@ -1,3 +1,4 @@
+# case10_mock_datetime_test.py
 import datetime
 import time
 
@@ -20,6 +21,7 @@ def test_calculation():
         'result': 18,
         'finished': now.strftime("%H:%M:%S"),
     }
+
     result = calculation()
 
     # spontaneously fail 50% runs
@@ -30,10 +32,12 @@ def test_calculation():
 
 
 @freeze_time("2010-01-01 12:58:33")
-def test_calculation_corrected():
+def test_calculation_datetime_mocked():
     expected = {
         'result' : 18,
         'finished': '12:58:33'
     }
+
     result = calculation()
+
     assert result == expected

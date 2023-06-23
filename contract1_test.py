@@ -1,4 +1,4 @@
-# case8_contract_test.py
+# contract1_test.py
 import random
 import secrets
 import string

@@ -1,4 +1,4 @@
-# case1_parametrized_test.py
+# case02_parametrized_test.py
 import pytest
 
 

@@ -1,10 +1,10 @@
-# case6_new_bug_test.py
+# case08_new_bug1_test.py
 import pytest
 
 
 def divider(one, two):
     if two == 0:
-        return 0
+        return None
     return one / two
 
 
@@ -13,7 +13,7 @@ def divider(one, two):
         [1, 1, 1],
         [1, 2, 0.5],
         [12, 3, 4],
-        [12, 0, 0],
+        [12, 0, None],
     ])
 def test_divider(one, two, expected):
     result = divider(one, two)
