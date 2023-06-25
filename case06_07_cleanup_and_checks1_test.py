@@ -15,7 +15,7 @@ def test_generate_report():
 
     assert file.exists()
     assert file.read_text() == 'content'
-    # file.unlink()
+    file.unlink()
 
 
 def test_generate_report_with_cleanup_and_checks():
